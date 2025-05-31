@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SMSBoomber.MainPage"
+             BackgroundColor="#121212">
+
+    <StackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+
+        
+        <Frame CornerRadius="10" HasShadow="False" BackgroundColor="#1e1e1e" Padding="0" HeightRequest="50">
+            <Entry Placeholder="Enter Phone Number"
+                   TextColor="White"
+                   PlaceholderColor="#bbbbbb"
+                   BackgroundColor="Transparent"
+                   VerticalOptions="Center"
+                   x:Name="fieldNumber"/>
+            
+        </Frame>
+
+       
+        <Button Text="Start"
+                BackgroundColor="#ff0000"
+                TextColor="White"
+                TextTransform="Uppercase"
+                Clicked="Button_Clicked"
+                CornerRadius="10"
+                HeightRequest="50"/>
+
+      
+        <Button Text="Stop And Exit"
+                
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                Clicked="Button_Clicked_1"/>
+
+        <Label Text="" HorizontalOptions="Center" x:Name="lblStatus" TextColor="Green"></Label>
+
+
+        <Label Text="github.com/amirmmd92"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Margin="0,0,0,50"
+               BackgroundColor="#5c5c5c"
+               TextColor="White"
+               Opacity="0.6"
+               FontSize="Small"/>
+    </StackLayout>
+
+</ContentPage>
